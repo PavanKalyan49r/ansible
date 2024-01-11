@@ -1,0 +1,13 @@
+- name: variables from prompt
+  hosts: localhost
+  vats-prompt:
+  - name: USERNAME
+    prompt: please enter your username
+    private: false #USER CAN SEE WHAT THEY TYPE
+  - name: PASSWORD
+    prompt: please enter your password
+    private: true #user can see what they type
+  tasks:
+  - name: print ans check the values
+    ansible.builtin.debug:
+      msg: "username is {{USERNAME}}, password is: {{PASSWORD}}"
