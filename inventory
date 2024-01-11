@@ -3,3 +3,11 @@
 
 [web]
 52.91.24.70
+
+[localhost]
+localhost
+
+[localhost:vars]
+course="DEVOPS with AWS"
+trainer="sivakumar"
+duration="110hrs"
