@@ -4,11 +4,11 @@
   - variables.yaml
   vars_prompt:
   - name: PERSON
-    prompt: please enter your NAME
+    prompt: please enter your name
     private: false #USER CAN SEE WHAT THEY TYPE
   - name: WISHES
-    prompt: please enter your WISHES
-    private: true #user can see what they type
+    prompt: please enter your wishes
+    private: false #user can see what they type
   vars:
     PERSON: "PAVAN FROM PLAY"
     WISHES: "MORNING FRPM PLAY"
@@ -18,5 +18,5 @@
       PERSON: "PAVAN FROM TASK"
       WISHES: "MORNING FROM TASK"
     ansible.builtin.debug:
-      msg: "hello {{PERSON}} good {{WISHES}}" 
+      msg: "hello {{PERSON}}, good {{WISHES}}" 
     
