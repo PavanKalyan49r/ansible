@@ -11,7 +11,7 @@
   #   private: false #user can see what they type
   vars:
     PERSON: "PAVAN FROM PLAY"
-    WISHES: "MORNING FRPM PLAY"
+    WISHES: "MORNING FROM PLAY"
   tasks:
   - name: check variables
     # vars:
